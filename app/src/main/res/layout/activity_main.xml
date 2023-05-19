@@ -7,21 +7,24 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="68dp"
+        android:text="@string/portfolio_welcome"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="goToCalculator"
         android:text="@string/calculator"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="99dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
