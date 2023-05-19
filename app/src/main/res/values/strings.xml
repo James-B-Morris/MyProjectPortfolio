@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Project Portfolio</string>
+
+    <string name="portfolio_welcome">Welcome to my Portfolio </string>
+    <string name="calculator">Calculator</string>
+
+    ///// LOG TAGS /////
+    <string name="log_main">Main.Info</string>
+
+    ///// status Tags /////
+    <string name="log_created">in onCreate</string>
+    <string name="log_started">in onStart</string>
+    <string name="log_resume">in onResume</string>
+    <string name="log_pause">in onPause</string>
+    <string name="log_stop">in onStop</string>
+    <string name="log_destroy">in onDestroy</string>
+    <string name="log_restart">in onRestart</string>
+</resources>
