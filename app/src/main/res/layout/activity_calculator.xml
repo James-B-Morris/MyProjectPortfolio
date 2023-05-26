@@ -49,8 +49,8 @@
 
     <Button
         android:id="@+id/btn0"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/zero"
         android:textSize="36sp"
@@ -60,8 +60,8 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
 
         android:text="@string/one"
@@ -72,8 +72,8 @@
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/two"
         android:textSize="36sp"
@@ -83,8 +83,8 @@
 
     <Button
         android:id="@+id/btn3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/three"
         android:textSize="36sp"
@@ -94,8 +94,8 @@
 
     <Button
         android:id="@+id/btn4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
 
         android:text="@string/four"
@@ -106,8 +106,8 @@
 
     <Button
         android:id="@+id/btn5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/five"
         android:textSize="36sp"
@@ -117,8 +117,8 @@
 
     <Button
         android:id="@+id/btn6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/six"
         android:textSize="36sp"
@@ -128,8 +128,8 @@
 
     <Button
         android:id="@+id/btn7"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
 
         android:text="@string/seven"
@@ -140,8 +140,8 @@
 
     <Button
         android:id="@+id/btn8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/eight"
 
@@ -151,8 +151,8 @@
 
     <Button
         android:id="@+id/btn9"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/nine"
         android:textSize="36sp"
@@ -162,8 +162,8 @@
 
     <Button
         android:id="@+id/btnDecimal"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/decimal_point"
         android:textSize="36sp"
@@ -173,20 +173,20 @@
 
     <Button
         android:id="@+id/btnNegative"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
 
         android:text="@string/invert_number"
-        android:textSize="36sp"
+        android:textSize="24sp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn1" />
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/add"
         android:textSize="36sp"
@@ -196,8 +196,8 @@
 
     <Button
         android:id="@+id/btnSubtract"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/subtract"
         android:textSize="36sp"
@@ -207,8 +207,8 @@
 
     <Button
         android:id="@+id/btnMultiply"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/multiply"
         android:textSize="36sp"
@@ -218,8 +218,8 @@
 
     <Button
         android:id="@+id/btnDivide"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginTop="24dp"
 
         android:text="@string/divide"
@@ -230,8 +230,8 @@
 
     <Button
         android:id="@+id/btnEquals"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:text="@string/equals"
         android:textSize="36sp"
@@ -241,8 +241,8 @@
 
     <Button
         android:id="@+id/btnBracket"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginTop="24dp"
 
         android:text="@string/brackets"
@@ -253,8 +253,8 @@
 
     <Button
         android:id="@+id/btnPercent"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginTop="24dp"
 
         android:text="@string/percentage"
@@ -265,8 +265,8 @@
 
     <Button
         android:id="@+id/btnClear"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="24dp"
 
