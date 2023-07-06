@@ -116,6 +116,7 @@ class CalculatorActivity : AppCompatActivity() {
             txtCalc.text = ""
             answer = 0
             calc = 0
+            Log.i(getString(R.string.log_calculator), getString(R.string.cleared))
             Log.i(getString(R.string.log_calculator), txtAns.text as String)
         }
     }
@@ -135,10 +136,12 @@ class CalculatorActivity : AppCompatActivity() {
         }
         else if (txt.length >= 12) {
             // set the last char to the new input
+            Log.i(getString(R.string.log_calculator), getString(R.string.length))
         }
         else {
             if ((txt == "0") || (txt == "-0")) {
                 txtAnswer.text = "$number"
+                Log.i(getString(R.string.log_calculator), txtAnswer.text as String)
             }
             else {
                 txtAnswer.text = "$txt$number"
@@ -178,6 +181,7 @@ class CalculatorActivity : AppCompatActivity() {
      * if a number is already in the calculation TextView, complete the equation
      */
     private fun operate(operator : String) {
+        Log.i(getString(R.string.log_calculator), operator)
         val txtCalc = findViewById<TextView>(R.id.txtCalc)
         var txt : String
 
@@ -194,7 +198,9 @@ class CalculatorActivity : AppCompatActivity() {
         txtCalc.text = "$txt $operator"
     }
 
-
+    /**
+     * completes the current sum currently in the calculator, e.g. 1+1 = 2
+     */
     private fun equals(){
         val txtViewAns = findViewById<TextView>(R.id.txtAns)
         val txtViewCalc = findViewById<TextView>(R.id.txtCalc)
@@ -211,6 +217,9 @@ class CalculatorActivity : AppCompatActivity() {
         else if (txtAns.isNotEmpty()){
             // calculate answer
             answer = txtAns.toInt()
+            Log.i("<------------", "--------->")
+            Log.i(getString(R.string.log_calculator), answer.toString())
+            Log.i(getString(R.string.log_calculator), calc.toString())
             when(txtCalc.isNotEmpty()){
                 txtCalc.contains(getString(R.string.add)) -> answer += calc
                 txtCalc.contains(getString((R.string.subtract))) -> answer -= calc

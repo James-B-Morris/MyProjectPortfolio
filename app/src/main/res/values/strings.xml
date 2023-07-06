@@ -41,5 +41,8 @@
     <string name="percentage">%</string>
     <string name="clear_answer">C</string>
 
+    <string name="length">12 digits reached</string>
+    <string name="cleared">Calc Cleared</string>
+
 
 </resources>
