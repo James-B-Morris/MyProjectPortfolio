@@ -30,11 +30,23 @@ class TapGameActivity : AppCompatActivity() {
         val txtScore = findViewById<TextView>(R.id.txtViewPoints)
         val btnTap = findViewById<Button>(R.id.btnTap)
 
+        val btnUpgradeTap = findViewById<Button>(R.id.btnUpgTap)
+        val btnUpgradeAuto = findViewById<Button>(R.id.btnUpgAuto)
+
         txtScore.text = score.toString()
 
+        // increase score by tap modifier each time the button is pressed.
         btnTap.setOnClickListener {
             score++
             txtScore.text = score.toString()
+        }
+        
+        btnUpgradeTap.setOnClickListener {
+
+        }
+
+        btnUpgradeAuto.setOnClickListener {
+
         }
     }
 

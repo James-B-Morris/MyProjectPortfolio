@@ -45,13 +45,13 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="24dp"
         android:text="@string/upgrade_tap"
-        app:layout_constraintEnd_toStartOf="@+id/BtnUpgAuto"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpgAuto"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTap" />
 
     <Button
-        android:id="@+id/BtnUpgAuto"
+        android:id="@+id/btnUpgAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
