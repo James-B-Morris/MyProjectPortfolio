@@ -6,6 +6,8 @@
 
     ///// LOG TAGS /////
     <string name="log_main">Main.Info</string>
+    <string name="log_calculator">Calculator.Info</string>
+    <string name="log_tap_game">Tap Game.Info</string>
 
     ///// status Tags /////
     <string name="log_created">in onCreate</string>
@@ -15,4 +17,33 @@
     <string name="log_stop">in onStop</string>
     <string name="log_destroy">in onDestroy</string>
     <string name="log_restart">in onRestart</string>
+
+    ///// CALCULATOR BUTTONS /////
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+
+    <string name="decimal_point">.</string>
+    <string name="invert_number">+/-</string>
+
+    <string name="equals">=</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="multiply">×</string>
+    <string name="divide">÷</string>
+    <string name="brackets">()</string>
+    <string name="percentage">%</string>
+    <string name="clear_answer">C</string>
+
+    <string name="length">12 digits reached</string>
+    <string name="cleared">Calc Cleared</string>
+
+
 </resources>
