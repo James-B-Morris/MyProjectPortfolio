@@ -4,10 +4,15 @@ import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 
 class TapGameActivity : AppCompatActivity() {
+    private var score = 0
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -16,6 +21,21 @@ class TapGameActivity : AppCompatActivity() {
         Log.i(getString(R.string.log_tap_game), getString(R.string.log_created))
 
         initToolbar()
+        initGame()
+
+
+    }
+
+    private fun initGame() {
+        val txtScore = findViewById<TextView>(R.id.txtViewPoints)
+        val btnTap = findViewById<Button>(R.id.btnTap)
+
+        txtScore.text = score.toString()
+
+        btnTap.setOnClickListener {
+            score++
+            txtScore.text = score.toString()
+        }
     }
 
     ///// TOOLBAR STUFF /////
