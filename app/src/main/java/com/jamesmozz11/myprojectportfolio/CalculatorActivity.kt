@@ -222,9 +222,9 @@ class CalculatorActivity : AppCompatActivity() {
             Log.i(getString(R.string.log_calculator), calc.toString())
             when(txtCalc.isNotEmpty()){
                 txtCalc.contains(getString(R.string.add)) -> answer += calc
-                txtCalc.contains(getString((R.string.subtract))) -> answer -= calc
+                txtCalc.contains(getString((R.string.subtract))) -> answer = calc - answer
                 txtCalc.contains(getString(R.string.multiply)) -> answer *= calc
-                txtCalc.contains(getString(R.string.divide)) -> calc /= answer
+                txtCalc.contains(getString(R.string.divide)) -> answer = calc / answer
             }
 
             // display answer

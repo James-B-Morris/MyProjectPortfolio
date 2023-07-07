@@ -3,6 +3,7 @@
 
     <string name="portfolio_welcome">Welcome to my Portfolio </string>
     <string name="calculator">Calculator</string>
+    <string name="tap_game">Tap Game</string>
 
     ///// LOG TAGS /////
     <string name="log_main">Main.Info</string>
@@ -44,6 +45,12 @@
 
     <string name="length">12 digits reached</string>
     <string name="cleared">Calc Cleared</string>
+
+    ///// TAP GAME /////
+
+    <string name="tap">TAP!</string>
+    <string name="upgrade_tap">^ Tap ^</string>
+    <string name="upgrade_auto">^ Auto ^</string>
 
 
 </resources>
