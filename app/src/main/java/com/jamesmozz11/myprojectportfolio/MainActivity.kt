@@ -48,4 +48,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, CalculatorActivity::class.java)
         startActivity(intent)
     }
+
+    fun goToTapGame(view: View) {
+        val intent = Intent(this, TapGameActivity::class.java)
+        startActivity(intent)
+    }
 }

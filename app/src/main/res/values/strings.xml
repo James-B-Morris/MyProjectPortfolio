@@ -7,6 +7,7 @@
     ///// LOG TAGS /////
     <string name="log_main">Main.Info</string>
     <string name="log_calculator">Calculator.Info</string>
+    <string name="log_tap_game">Tap Game.Info</string>
 
     ///// status Tags /////
     <string name="log_created">in onCreate</string>
