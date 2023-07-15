@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:onClick="screenTapped">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tapgameToolbar"
@@ -23,42 +24,57 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tapgameToolbar" />
 
     <Button
-        android:id="@+id/btnTap"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="200dp"
-        android:text="@string/tap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewPoints" />
-
-    <Button
         android:id="@+id/btnUpgTap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="24dp"
         android:text="@string/upgrade_tap"
-        app:layout_constraintEnd_toStartOf="@+id/BtnUpgAuto"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpgAuto"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTap" />
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPoints"
+        app:layout_constraintVertical_bias="0.69" />
 
     <Button
-        android:id="@+id/BtnUpgAuto"
+        android:id="@+id/btnUpgAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:text="@string/upgrade_auto"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintHorizontal_bias="0.677"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTap" />
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPoints"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <TextView
+        android:id="@+id/txtTapCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/txtAutoCost"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpgTap" />
+
+    <TextView
+        android:id="@+id/txtAutoCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpgAuto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
