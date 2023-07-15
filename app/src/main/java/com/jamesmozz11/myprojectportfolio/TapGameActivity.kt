@@ -8,9 +8,14 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import org.w3c.dom.Text
 
 class TapGameActivity : AppCompatActivity() {
     private var score = 0
+    private var tapModifier = 1
+    private var autoModifier = 0
+    private var tapCost = 10.0
+    private var autoCost = 10.0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,21 +37,49 @@ class TapGameActivity : AppCompatActivity() {
 
         val btnUpgradeTap = findViewById<Button>(R.id.btnUpgTap)
         val btnUpgradeAuto = findViewById<Button>(R.id.btnUpgAuto)
+        val txtTapCost = findViewById<TextView>(R.id.txtTapCost)
+        val txtAutoCost = findViewById<TextView>(R.id.txtAutoCost)
 
         txtScore.text = score.toString()
+        txtTapCost.text = tapCost.toInt().toString()
+        txtAutoCost.text = autoCost.toInt().toString()
 
         // increase score by tap modifier each time the button is pressed.
         btnTap.setOnClickListener {
-            score++
+            score += tapModifier
             txtScore.text = score.toString()
         }
-        
-        btnUpgradeTap.setOnClickListener {
 
+        btnUpgradeTap.setOnClickListener {
+            if (score >= tapCost) {
+                tapModifier *= 2
+                Log.i(getString(R.string.log_tap_game), tapModifier.toString())
+
+                score -= tapCost.toInt()
+                Log.i(getString(R.string.log_tap_game), score.toString())
+
+                tapCost *= 2.5
+                Log.i(getString(R.string.log_tap_game), tapCost.toString())
+
+                txtScore.text = score.toString()
+                txtTapCost.text = tapCost.toInt().toString()
+            }
         }
 
         btnUpgradeAuto.setOnClickListener {
+            if (score >= autoCost) {
+                autoModifier *= 2
+                Log.i(getString(R.string.log_tap_game), autoModifier.toString())
 
+                score -= autoCost.toInt()
+                Log.i(getString(R.string.log_tap_game), score.toString())
+
+                autoCost *= 2
+                Log.i(getString(R.string.log_tap_game), autoCost.toString())
+
+                txtScore.text = score.toString()
+                txtAutoCost.text = autoCost.toInt().toString()
+            }
         }
     }
 
